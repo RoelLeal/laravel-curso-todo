@@ -84,7 +84,6 @@ class CategoriesController extends Controller
             $todo->delete();
         });
         $category->delete();
-
         return redirect()->route('categories.index')
         ->with('success', 'Categoria eliminada!');
     }
